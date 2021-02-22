@@ -6,8 +6,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-woocommerce-theme',
 			options: {
-				wordPressUrl: 'https://www.sutrashop.com.hr',
-				gatsbySiteUrl: 'https://www.sutrashop.com.hr',
+				wordPressUrl: `${process.env.WORDPRESS_SITE_URL}`,
+				gatsbySiteUrl: `${process.env.GATSBY_SITE_URL}`,
 				googleTagManagerId: `${process.env.GOOGLE_TAGMANAGER_ID}`,
 				fbAppId: `${process.env.FB_APP_ID}`,
 			},
